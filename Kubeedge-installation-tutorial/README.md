@@ -493,8 +493,6 @@ $ keadm init --advertise-address="IP"
 # netstat -tunlp | grep 10000
 ```
 
-![image-20201206173301281](C:\Users\cossj\AppData\Roaming\Typora\typora-user-images\image-20201206173301281.png)
-
 ## 创建edge节点
 
 在cloud端获取token：
@@ -545,8 +543,6 @@ RestartSec=10
 [Install]
 WantedBy=multi-user.target
 ```
-
-![image-20201214102543273](C:\Users\cossj\AppData\Roaming\Typora\typora-user-images\image-20201214102543273.png)
 
 在cloud查看日志：
 

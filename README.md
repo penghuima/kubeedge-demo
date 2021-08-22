@@ -6,8 +6,8 @@
 
 - [基于KubeEdge框架的demo](./samples) 
 - [开发demo过程中所有文档记录](./doc)
-- [实验结果截图](./Screenshot of running result)
-- [kubeedge 环境搭建教程](./Kubeedge installation tutorial)
+- [实验结果截图](./Screenshot-of-running-result)
+- [kubeedge 环境搭建教程](./Kubeedge-installation-tutorial)
 
 下面详细介绍 [Temperature demo on Raspberry PI](./samples/temperature-demo) 部署实例
 
