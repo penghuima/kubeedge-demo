@@ -45,19 +45,16 @@ $ git clone https://github.com/kubeedge/examples.git $GOPATH/src/github.com/kube
 
 ```console
 $ cd $GOPATH/src/github.com/kubeedge/examples/temperature-demo/crds
-$ kubectl apply -f devicemodel.yaml
-$ sed -i "s#edge-node#<your-edge-node-name>#g" instance.yaml
-$ kubectl apply -f device.yaml
+$ kubectl apply -f model.yaml
+$ sed -i "s#edge-node#raspberrypi#g" instance.yaml
+$ kubectl apply -f instance.yaml
 ```
 
  6. Build the mapper to run in RaspBerry-Pi.
 
 ```shell
 cd $GOPATH/src/github.com/kubeedge/examples/temperature-demo
-docker build -t <your_dockerhub_username>/kubeedge-temperature-mapper:<your_tag> .
-docker push <your_dockerhub_username>/kubeedge-temperature-mapper:<your_tag>
-
-# Note: Before trying to push the docker image to the remote repository please ensure that you have signed into docker from your node, if not please type the followig command to sign in
+docker build -t kubeedge/kubeedge-temperature-mapper-demo:arm64 
 ```
 
  7. Deploy the temperature mapper.
