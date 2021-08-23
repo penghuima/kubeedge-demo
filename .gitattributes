@@ -1,0 +1,3 @@
+*.go linguist-language=Go
+*.mod linguist-language=Go
+*.sum linguist-language=Go
